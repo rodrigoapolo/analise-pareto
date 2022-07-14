@@ -5,6 +5,8 @@
 
 #remove duplicatas
 def remove_duplicatas(lista):
+    """ recebe lista como argumento, remove duplicatas e altera contador """
+    print(1)
     d = []
     con=0
     for i in lista:
@@ -17,6 +19,7 @@ def remove_duplicatas(lista):
     
 # Criar uma matriz 
 def criar_matriz (n_linhas, n_colunas):
+    print(2)
     matriz = []
 
     for _ in range(n_linhas+1):
@@ -28,6 +31,7 @@ def criar_matriz (n_linhas, n_colunas):
 #Gerar uma Tabela
 def gerar_matriz(defeito = [],cantidade = []):
     
+    print(3)
     tabela = criar_matriz(len(defeito),4)
     #tabela = [[0]*4]*len(vetor)
     x = 0
@@ -44,6 +48,7 @@ def gerar_matriz(defeito = [],cantidade = []):
     
 #Somar Total de defeito
 def somaTotal (lista):
+    print(4)
     somaTotal = 0
     for i in range(0,len(lista)):
         somaTotal += lista[i][1]
@@ -52,16 +57,19 @@ def somaTotal (lista):
     
 #Percentual dos Defeitos
 def percentualDefeitos(lista):
+    print(5)
     for i in range(0,len(lista)):
         lista[i][2]=(lista[i][1]/lista[(len(lista)-1)][1])*100
 
+### Execução começa por aqui ###
 
 #Ler o arquivo
 dados = open("dados.txt", "r")
 
-#Coloca o arquivo em uma lista
+#Coloca o arquivo em uma lista, separando um conceito por linha 
 Lista = dados.read().split('\n')
 
+# criar registros únicos retornados 
 vetor = remove_duplicatas(Lista)
 
 contador = []
