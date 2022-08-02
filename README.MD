@@ -3,6 +3,8 @@
 Popularmente conhecido como 80/20, o teorema de Pareto propõe que 80% dos resultados são originados a partir de 20% dos esforços. 
 Se quiser saber mais sobre, confere esse artigo da rock content [aqui](https://rockcontent.com/br/blog/principio-de-pareto/) 
 
+![Grafico-pareto](https://i0.wp.com/gestaodesegurancaprivada.com.br/wp-content/uploads/grafico-paretos.jpg?resize=700%2C324)
+
 ## Funcionamento do Script - Instruções 
 O presente script tem como objetivo analisar a recorrência de conceitos em um determinado intervalo de texto e retornar os itens por ordem de recorrência. Para isso, siga o passo-a-passo abaixo:
 
